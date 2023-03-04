@@ -1,0 +1,912 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #343434;
+}
+.navbar{
+  transition:background-color 1s ;
+}
+
+.navbar .nav-item {
+    font-size: 14px;
+    margin: 0 20px 0;
+}
+
+
+ .navbar-brand {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+
+nav .logo:hover {
+    color: #fff;
+}
+
+.navbar .nav-item a {
+    margin: 0 !important;
+    color: #fff !important;
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .5s;
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .show>.nav-link {
+    width: 100%;
+
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .show>.nav-link {
+    width: 100%;
+
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler i {
+color: white;
+}
+.navbar-toggler{
+    border: none;
+}
+
+/************** End Navbar *******************/
+/************** Start Home *******************/
+
+.home {
+    background-image: url(../images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home .layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home .text {
+    color: #fff;
+}
+
+.home .text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.home .text span {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+
+/* .home .text span::after {
+    content: " ";
+    animation: text 10s infinite alternate;
+
+} */
+/* @keyframes text {
+    0% {
+        content: "l|";
+    }
+    1% {
+      content: "la|";
+    }
+    2% {
+      content: "lar|";
+    }
+    3% {
+      content: "larr|";
+    }
+    4% {
+      content: "larry|";
+    }
+    5% {
+      content: "larry D |";
+    }
+    6% {
+      content: "larry Da|";
+    } 
+    7% {
+      content: "larry Dan|";
+    }
+    8% {
+      content: "larry Dani|";
+    }
+    9% {
+      content: "larry Danie|";
+    }
+    10% {
+      content: "larry Daniel|";
+    }
+    11% {
+      content: "larry Daniels|";
+    }
+    12% {
+      content: "larry Daniel |";
+    }
+    13% {
+      content: "larry Danie |";
+    }
+    14% {
+      content: "larry Dani |";
+    }
+    15% {
+      content: "larry Dan |";
+    }
+    16% {
+      content: "larry Da |";
+    }
+    17% {
+      content: "larry D |";
+    }
+    18% {
+      content: "larry |";
+    }
+    19% {
+      content: "larr |";
+    }
+    20% {
+      content: "lar|";
+    }
+    21% {
+      content: "la |";
+    }
+    22% {
+      content: "l|";
+    }
+    23% {
+      content: "l |";
+    }
+    25% {
+      content: "|";
+    }
+    26% {
+      content: "D|";
+    }
+    27% {
+      content: "De |";
+    }
+    28% {
+      content: "Des |";
+    }
+    29% {
+      content: "Desi |";
+    }
+    30% {
+      content: "Desig|";
+    }
+    31% {
+      content: "Design|";
+    }
+    32% {
+      content: "Designe |";
+    }
+    33% {
+      content: "Designer |";
+    }
+    34% {
+      content: "Designe |";
+    }
+    35% {
+      content: "Design |";
+    }
+    36% {
+      content: "Desig |";
+    }
+    37% {
+      content: "Desi |";
+    }
+    38% {
+      content: "Des |";
+    }
+    39% {
+      content: "De |";
+    }
+    40% {
+      content: "D |";
+    }
+    41% {
+      content: "|";
+    }
+    42% {
+      content: "D |";
+    }
+    43% {
+      content: "De |";
+    }
+    44% {
+      content: "Dev |";
+    }
+    45% {
+      content: "Deve |";
+    }
+    46% {
+      content: "Devel |";
+    }
+    47% {
+      content: "Develo |";
+    }
+    48% {
+      content: "Develop |";
+    }
+    49% {
+      content: "Develope |";
+    }
+    50% {
+      content: "Developer |";
+    }
+    51% {
+      content: "Develope|";
+    }
+    52% {
+      content: "Develop |";
+    }
+    53% {
+      content: "Develo|";
+    }
+    54% {
+      content: "Devel |";
+    }
+    55% {
+      content: "Devel |";
+    }
+    56% {
+      content: "Deve |";
+    }
+    57% {
+      content: "Dev |";
+    }
+    58% {
+      content: "Dev |";
+    }
+    59% {
+      content: "De |";
+    }
+    60% {
+      content: "D |";
+    }
+    61% {
+      content: "|";
+    }
+    100%{
+        content: "|";
+
+    }
+  } */
+
+
+.home .icon {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.home .icon i {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    transition: border-color 1s;
+}
+
+/************** End Home *******************/
+/************** Start about *******************/
+
+.about .images {
+    position: relative;
+    padding: 0 0 0 30px;
+    margin-bottom: 40px;
+}
+
+.about .images::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 20px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+.about .detiles h3 {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.about .detiles p {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about span {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+
+.about .skills {
+    margin-top: 30px;
+}
+
+.about .item {
+    margin-bottom: 20px;
+}
+
+.about .progress {
+    height: 1.5rem;
+}
+
+.about .progress-bar {
+    align-items: flex-start;
+    padding-left: 20px;
+    background: black;
+    position: relative;
+}
+
+.about .progress span {
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.about .progress-bar::after {
+    content: attr(data-value);
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.about .btn1 {
+    padding: 8px 25px;
+    margin-top: 20px;
+    background: #1c1c1c;
+    color: #eee;
+}
+
+.about .btn1:hover {
+    background-color: #fff;
+    color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+}
+
+.about .btn2 {
+    padding: 8px 25px;
+    border: 1px solid #1c1c1c;
+    margin-top: 20px;
+    background: #fff;
+    color: #1c1c1c;
+}
+
+.about .btn2:hover {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+}
+
+/************** End about *******************/
+/************** Start services *******************/
+.services {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.services .head {
+    text-align: center;
+}
+
+.services h2 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+}
+
+
+.services h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.services .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.9rem;
+    margin: 2rem auto;
+    background: #f4f4f4;
+    border-radius: 50px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+}
+
+.services .card:hover .icon {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.services .card {
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.services h5 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.services p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #748182;
+
+}
+
+/************** End services *******************/
+/************** Start Portfolio *******************/
+.portfolio {
+    text-align: center;
+}
+
+.portfolio .head h2 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+}
+
+.portfolio h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.portfolio .itmes {
+    position: relative;
+}
+
+.portfolio .bdr {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    transition: all 1s;
+
+}
+
+.portfolio .itmes:hover .bdr {
+    opacity: 1;
+}
+
+.portfolio .overlay-info {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 0;
+}
+
+.portfolio .bdr h5 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px;
+    transform: translateY(-15px);
+    transition: all .5s;
+}
+
+.portfolio .bdr:hover h5 {
+    transform: translateY(0px);
+
+}
+
+.portfolio .bdr .icon i {
+    background-color: #1c1c1c;
+    border-radius: 50px;
+    font-size: 14px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    color: #fff;
+    transform: translateY(15px);
+    transition: all .5s;
+
+}
+
+.portfolio .bdr:hover i {
+    transform: translateY(0px);
+
+}
+
+.portfolio .bdr .icon i:hover {
+    color: #1c1c1c;
+    background: transparent;
+    border: 1px solid #1c1c1c;
+}
+
+.portfolio .nav-link {
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1c1c1c;
+}
+
+.portfolio .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 0%;
+    height: 10%;
+    background-color: #1c1c1c;
+    padding: 0;
+}
+
+.portfolio .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: transparent;
+    color: #1c1c1c;
+}
+
+.portfolio .nav-pills .nav-link.active::before,
+.nav-pills .show>.nav-link {
+    width: 70%;
+}
+
+/************** End Portfolio *******************/
+/************** Start Clients *******************/
+.clients {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 50px 0;
+}
+.clients  img{
+    width: 150px;
+    height: 150px
+
+}
+
+.clients h2 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+}
+
+.clients h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.clients p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    color: #748182;
+}
+
+.clients h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+
+.clients span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background: #869791;
+}
+
+/************** End Clients *******************/
+/************** Start count *******************/
+.count {
+    padding: 40px 0;
+}
+
+.count .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.count h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.count p {
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+
+/************** End count *******************/
+/************** Start Blog *******************/
+.Blog {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.Blog .head h2 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+}
+
+.Blog .head h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.Blog .images{
+  overflow: hidden;
+}
+.Blog img{
+  transition: all 1s;
+  
+}
+.Blog img:hover{
+transform: scale(1.15);
+}
+
+.Blog .items a {
+    text-decoration: none;
+    color: #748182;
+}
+
+.Blog .items h4 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.Blog .btn {
+    position: relative;
+    text-align: center;
+}
+
+.Blog .btn::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 9px;
+    width: 80%;
+    height: 9%;
+    background-color: #1c1c1c;
+
+}
+
+/************** End Blog *******************/
+/************** Start Contact *******************/
+.Contact {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.Contact .head h2 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+}
+
+.Contact .head h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.Contact .icon {
+    font-size: 2rem;
+    background: #f4f4f4;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #1c1c1c;
+
+}
+
+.Contact  .items:hover .icon {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.Contact .items h6{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.Contact .items p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.form-control {
+    background: #f4f4f4;
+}
+
+textarea.form-control {
+    height: 160px;
+    max-height: 160px;
+    max-width: 100%;
+}
+.Contact .btn{
+display: flex;
+justify-content: left;
+background-color: #1c1c1c;
+color: #fff;
+padding:10px 35px;
+}
+.Contact .btn:hover{
+    border:1px solid #1c1c1c;
+}
+
+
+/************** End Contact *******************/
+/************** Start footer *******************/
+
+footer {
+    background: #1c1c1c;
+     padding: 30px; 
+}
+footer p{
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+    color: #748182;
+}
+/************** End footer *******************/
+.loading{
+  background-color: #1c1c1cec;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  z-index: 555555555;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
