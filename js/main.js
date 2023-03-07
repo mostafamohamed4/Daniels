@@ -62,5 +62,5 @@ $('.counter').counterUp({
     time: 2000
 });
 $(document).ready(()=>{
-    $(".loading").fadeOut(1000);
+    $(".loading").fadeOut(2000);
 })
